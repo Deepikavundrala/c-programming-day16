@@ -1,0 +1,23 @@
+#include<stdio.h>
+long int fact(int);
+void main()
+{
+int n;
+long int f;
+printf("enter a number");
+scanf("%d",&n);
+f=fact(n);
+printf("the result is %d",f);
+}
+long int fact(int n)
+{
+	if(n==1)
+{
+	return 1;
+}
+else
+{
+	return(n*fact(n-1));
+}
+}
+
